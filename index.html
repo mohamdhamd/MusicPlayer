@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome css link-->
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="fontawesome.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="feem_a0a7cdd4e9dbaf72_IMG_20221018_151305.jpg" class="song-img" alt="">
+            <h1>Kan Fe tephle</h1>
+            <p>Ahmed Kamel</p>
+            <audio id="song" >
+                <source src="Ahmed Kamel - Kan Fe Tefl أحمد كامل - كان فى طفل F(MP3_160K).mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div> <i class="fa-solid fa-backward"></i> </div>
+                <div> <i class="fa-solid fa-play" id="ctrIcon" onclick="playPause()"></i> </div>
+                <div> <i class="fa-solid fa-forward"></i> </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- font awesome js link -->
+    <script src="all.min.js"></script>
+    <script src="fontawesome.min.js"></script>
+    <!-- js link -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
